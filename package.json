@@ -1,0 +1,22 @@
+{
+  "name": "ui5-basic-template-with-ui5-tooling",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "ui5 serve --simple-index -o index.html",
+    "build": "ui5 build -a --clean-dest",
+    "build-self-contained": "ui5 build self-contained -a --clean-dest",
+    "serve-dist": "ws --compress -d dist",
+    "lint": "eslint webapp"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@ui5/cli": "^2.7.0",
+    "local-web-server": "^4.2.1",
+    "rimraf": "^3.0.2",
+    "eslint": "^7.15.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
