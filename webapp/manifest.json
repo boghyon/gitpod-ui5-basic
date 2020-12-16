@@ -1,0 +1,82 @@
+{
+  "_version": "1.25.0",
+  "start_url": "index.html",
+  "sap.app": {
+    "id": "demo",
+    "type": "application",
+    "title": "App Title",
+    "description": "Sample Code",
+    "applicationVersion": {
+      "version": "1.0.0"
+    },
+    "dataSources": {}
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "dependencies": {
+      "minUI5Version": "1.81.2",
+      "libs": {
+        "sap.ui.core": {},
+        "sap.m": {},
+        "sap.ui.table": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "resources": {
+      "js": [],
+      "css": []
+    },
+    "models": {},
+    "rootView": {
+      "viewName": "demo.view.App",
+      "id": "rootView",
+      "type": "XML",
+      "async": true
+    },
+    "routing": {
+      "routes": {
+        "home": {
+          "pattern": "",
+          "target": "home"
+        }
+      },
+      "targets": {
+        "home": {
+          "id": "homeView",
+          "name": "Home",
+          "viewLevel": 1
+        },
+        "notFound": {
+          "id": "notFoundView",
+          "name": "Home",
+          "transition": "slide",
+          "viewLevel": 98
+        }
+      },
+      "config": {
+        "async": true,
+        "type": "View",
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "path": "demo.view",
+        "controlId": "rootApp",
+        "controlAggregation": "pages",
+        "transition": "slide",
+        "bypassed": {
+          "target": "notFound"
+        },
+        "homeRoute": "home"
+      }
+    }
+  }
+}
