@@ -1,0 +1,10 @@
+<mvc:View controllerName="demo.controller.Home"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+>
+  <Page id="homePage"
+    title="Home"
+    class="sapUiResponsiveContentPadding"
+  >
+  </Page>
+</mvc:View>
