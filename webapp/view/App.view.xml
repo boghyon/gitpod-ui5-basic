@@ -1,0 +1,12 @@
+<mvc:View controllerName="demo.controller.App"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  displayBlock="true"
+  height="100%"
+>
+  <App id="rootApp" autoFocus="false">
+    <pages>
+      <!-- will be added by Router -->
+    </pages>
+  </App>
+</mvc:View>
