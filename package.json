@@ -3,7 +3,8 @@
     "version": "1.0.0",
     "description": "",
     "scripts": {
-        "start": "ui5 serve --port 3000 -o index.html",
+        "start": "ui5 serve --port 3000 --open index.html",
+        "start-dist": "ui5 serve --config ui5-dist.yaml --open index.html",
         "build": "ui5 build -a --clean-dest",
         "build-self-contained": "ui5 build self-contained -a --clean-dest",
         "serve-dist": "ws --compress -d dist",

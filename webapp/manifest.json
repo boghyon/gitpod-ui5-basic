@@ -28,8 +28,7 @@
             "minUI5Version": "1.81.2",
             "libs": {
                 "sap.ui.core": {},
-                "sap.m": {},
-                "sap.ui.table": {}
+                "sap.m": {}
             }
         },
         "contentDensities": {

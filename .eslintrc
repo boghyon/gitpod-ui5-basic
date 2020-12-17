@@ -1,7 +1,4 @@
 {
-    "$schema": "https://json.schemastore.org/eslintrc",
-    // Apparently eslint is not configurable yet on codesandbox.io
-    // See https://github.com/codesandbox/codesandbox-client/issues/1933
     "parserOptions": {
         "sourceType": "script",
         "ecmaVersion": 6,

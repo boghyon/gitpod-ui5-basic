@@ -3,6 +3,10 @@ specVersion: "2.2"
 metadata:
   name: demo
 type: application
+resources:
+  configuration:
+    paths:
+      webapp: dist
 framework:
   name: OpenUI5
   version: "1.85.2"

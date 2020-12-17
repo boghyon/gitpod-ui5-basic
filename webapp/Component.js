@@ -1,6 +1,7 @@
 sap.ui.define([
   "sap/ui/core/UIComponent",
-  "sap/ui/Device"
+  "sap/ui/Device",
+  "sap/ui/core/ComponentSupport",
 ], function (UIComponent, Device) {
   "use strict";
 
