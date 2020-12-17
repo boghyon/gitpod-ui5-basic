@@ -8,4 +8,4 @@ ports:
 
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - init: npm && npm install --global @ui5/cli && npm install
+  - init: npm install --global @ui5/cli && npm install
