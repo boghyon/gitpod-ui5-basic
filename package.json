@@ -16,11 +16,13 @@
         "eslint": "^7.15.0",
         "local-web-server": "^4.2.1",
         "rimraf": "^3.0.2",
-        "ui5-middleware-simpleproxy": "^0.6.0"
+        "ui5-middleware-simpleproxy": "*",
+        "ui5-middleware-index": "*"
     },
     "ui5": {
         "dependencies": [
-            "ui5-middleware-simpleproxy"
+            "ui5-middleware-simpleproxy",
+            "ui5-middleware-index"
         ]
     },
     "keywords": [],
