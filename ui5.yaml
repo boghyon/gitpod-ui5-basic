@@ -19,3 +19,4 @@ server:
         baseUri: "https://services.odata.org"
     - name: ui5-middleware-index
       afterMiddleware: compression
+...

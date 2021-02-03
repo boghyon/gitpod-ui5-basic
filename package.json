@@ -7,12 +7,11 @@
         "start-dist": "ui5 serve --config ui5-dist.yaml --open index.html",
         "build": "ui5 build -a --clean-dest",
         "build-self-contained": "ui5 build self-contained -a --clean-dest",
-        "serve-dist": "ws --compress -d dist",
         "lint": "eslint webapp"
     },
     "dependencies": {},
     "devDependencies": {
-        "@ui5/cli": "^2.7.0",
+        "@ui5/cli": "^2.9.3",
         "eslint": "^7.15.0",
         "local-web-server": "^4.2.1",
         "rimraf": "^3.0.2",

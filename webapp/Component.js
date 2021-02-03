@@ -2,6 +2,7 @@ sap.ui.define([
   "sap/ui/core/UIComponent",
   "sap/ui/Device",
   "sap/ui/core/ComponentSupport",
+  "sap/ui/thirdparty/datajs",
 ], function (UIComponent, Device) {
   "use strict";
 
