@@ -16,7 +16,11 @@ server:
       afterMiddleware: compression
       mountPath: /odata
       configuration:
-        baseUri: "https://services.odata.org"
+        # Sample OData services from SAP (read/write).
+        # Get a free account by following https://blogs.sap.com/2017/12/05/new-sap-gateway-demo-system-available/#:~:text=sign%20up,here
+        baseUri: https://sapes5.sapdevcenter.com
+        # user name and password should be created in the .env file.
+        # See https://github.com/petermuessig/ui5-ecosystem-showcase/blob/21b24332019415d98c456685fa5893089c13f669/packages/ui5-middleware-simpleproxy/README.md#env-support
     - name: ui5-middleware-index
       afterMiddleware: compression
 ...

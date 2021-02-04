@@ -11,46 +11,10 @@
         <List id="sampleList"
             busyIndicatorDelay="0"
             growing="true"
-            items="{
-                path: '/Products',
-                templateShareable: false,
-                parameters: {
-                    expand: 'Category, Supplier',
-                    select: 'ProductID, ProductName, UnitsInStock, Category/CategoryID, Category/CategoryName, Supplier/SupplierID, Supplier/Country'
-                },
-                sorter: [
-                    {
-                        path: 'Category/CategoryName',
-                        group: true
-                    },
-                    {
-                        path: 'ProductName'
-                    }
-                ],
-                filters: [
-                    {
-                        filters: [
-                            {
-                                path: 'Supplier/Country',
-                                operator: 'EQ',
-                                value1: 'UK',
-                                caseSensitive: false
-                            },
-                            {
-                                path: 'ProductName',
-                                operator: 'NotStartsWith',
-                                value1: 'Sir ',
-                                caseSensitive: false
-                            }
-                        ],
-                        and: true
-                    }
-                ]
-            }"
+            items="{/SalesOrder}"
         >
             <ObjectListItem
-                title="{ path: 'ProductName', type: 'EdmStringType' }"
-                number="{ path: 'UnitsInStock', type: 'EdmStringType' }"
+                title="{Creationdatetime}"
             />
         </List>
     </Page>

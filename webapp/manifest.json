@@ -11,7 +11,11 @@
         },
         "dataSources": {
             "myODataService": {
-                "uri": "/odata/V2/Northwind/Northwind.svc/"
+                "uri": "/odata/sap/opu/odata4/sap/ze2e001/default/sap/ze2e001_salesorder/0001/",
+                "type": "OData",
+                "settings": {
+                    "odataVersion": "4.0"
+                }
             }
         }
     },
@@ -43,8 +47,11 @@
             "": {
                 "dataSource": "myODataService",
                 "settings": {
-                    "tokenHandling": false,
-                    "defaultBindingMode": "TwoWay"
+                    "autoExpandSelect": true,
+                    "earlyRequests": true,
+                    "operationMode": "Server",
+                    "synchronizationMode": "None",
+                    "groupId": "$direct"
                 },
                 "preload": true
             }
