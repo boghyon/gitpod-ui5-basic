@@ -1,21 +1,22 @@
 <mvc:View controllerName="demo.controller.Home"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:core="sap.ui.core"
-    core:require="{
-        EdmStringType: 'sap/ui/model/odata/type/String'
-    }">
+>
     <Page xmlns="sap.m"
-        title="Products from UK and Product Name Not Starting with &#34;Sir&#34;"
+        title="Sample data from OData V4 - Sales Orders created at:"
         backgroundDesign="List"
     >
         <List id="sampleList"
-            busyIndicatorDelay="0"
             growing="true"
-            items="{/SalesOrder}"
+            items="{
+                path: '/SalesOrder',
+                templateShareable: false,
+                parameters: {
+                    $$sharedRequest: true
+                }
+            }"
         >
-            <ObjectListItem
-                title="{Creationdatetime}"
-            />
+            <StandardListItem title="{Creationdatetime}" />
         </List>
     </Page>
 </mvc:View>
