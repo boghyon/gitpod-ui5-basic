@@ -1,11 +1,11 @@
 ---
-specVersion: "2.2"
+specVersion: "2.6"
 metadata:
   name: demo
 type: application
 framework:
   name: OpenUI5
-  version: "1.85.2"
+  version: "1.96.0"
   libraries:
     - name: sap.m
     - name: sap.ui.core

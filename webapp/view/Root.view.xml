@@ -1,0 +1,28 @@
+<mvc:View
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  displayBlock="true"
+  controllerName="demo.controller.Root"
+>
+  <App autoFocus="false">
+    <Page title="Continuously Updating Table">
+      <!-- Sample sap.m.ListBase control -->
+      <Table id="table">
+        <columns>
+          <Column>
+            <Text text="Product ID" />
+          </Column>
+          <Column>
+            <Text text="Category Name" />
+          </Column>
+        </columns>
+        <dependents>
+          <ColumnListItem id="itemToCopy">
+            <Text text="{Product}" />
+            <Text text="{ProductCategory}" />
+          </ColumnListItem>
+        </dependents>
+      </Table>
+    </Page>
+  </App>
+</mvc:View>

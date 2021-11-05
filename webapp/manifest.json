@@ -1,5 +1,5 @@
 {
-    "_version": "1.25.0",
+    "_version": "1.35.0",
     "start_url": "index.html",
     "sap.app": {
         "id": "demo",
@@ -11,10 +11,10 @@
         },
         "dataSources": {
             "myODataService": {
-                "uri": "/odata/sap/opu/odata4/sap/ze2e001/default/sap/ze2e001_salesorder/0001/",
+                "uri": "/odata/sap/opu/odata/sap/ZPDCDS_SRV/",
                 "type": "OData",
                 "settings": {
-                    "odataVersion": "4.0"
+                    "odataVersion": "2.0"
                 }
             }
         }
@@ -47,17 +47,13 @@
             "": {
                 "dataSource": "myODataService",
                 "settings": {
-                    "autoExpandSelect": true,
-                    "earlyRequests": true,
-                    "operationMode": "Server",
-                    "synchronizationMode": "None",
-                    "groupId": "$direct"
+                    "useBatch": false
                 },
                 "preload": true
             }
         },
         "rootView": {
-            "viewName": "demo.view.App",
+            "viewName": "demo.view.Root",
             "id": "rootView",
             "type": "XML",
             "async": true
