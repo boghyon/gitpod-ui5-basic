@@ -6,6 +6,7 @@ sap.ui.define([
   return Controller.extend("demo.controller.Home", {
     onInit: function () {
       // ...
-    }
+    },
+
   });
 });

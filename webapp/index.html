@@ -1,24 +1,29 @@
 <!DOCTYPE html>
-<html style="height: 100%;">
+<html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Demo</title>
     <script
       id="sap-ui-bootstrap"
-      src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
-      data-sap-ui-theme="sap_fiori_3_dark"
+      src="resources/sap-ui-core.js"
+      data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
+      data-sap-ui-theme="sap_horizon_dark"
       data-sap-ui-async="true"
       data-sap-ui-compatversion="edge"
       data-sap-ui-excludejquerycompat="true"
-      data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
       data-sap-ui-resourceroots='{ "demo": "./" }'
       data-sap-ui-xx-waitfortheme="init"
     ></script>
   </head>
-  <body id="content" class="sapUiBody">
+  <body
+    id="content"
+    class="sapUiBody"
+  >
     <div
-      style="height: 100%;"
       data-sap-ui-component
       data-id="rootComponentContainer"
       data-name="demo"
