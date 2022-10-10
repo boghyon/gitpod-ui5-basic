@@ -14,4 +14,5 @@ tasks:
 vscode:
   extensions:
     - redhat.vscode-xml
-    - https://marketplace.visualstudio.com/_apis/public/gallery/publishers/SAPOSS/vsextensions/vscode-ui5-language-assistant/latest/vspackage
+    - https://github.com/SAP/ui5-language-assistant/releases/latest/download/vscode-ui5-language-assistant-3.3.1.vsix
+    - https://github.com/SAP/yeoman-ui/releases/latest/download/yeoman-ui-1.8.2.vsix
