@@ -60,8 +60,7 @@
 		"rootView": {
 			"viewName": "demo.view.App",
 			"id": "rootView",
-			"type": "XML",
-			"async": true
+			"type": "XML"
 		},
 		"routing": {
 			"routes": [
@@ -85,7 +84,6 @@
 				}
 			},
 			"config": {
-				"async": true,
 				"type": "View",
 				"routerClass": "sap.m.routing.Router",
 				"viewType": "XML",

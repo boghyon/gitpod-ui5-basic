@@ -2,6 +2,7 @@ sap.ui.define([
   "sap/ui/core/UIComponent",
   "sap/ui/Device",
   "sap/ui/core/ComponentSupport", //https://github.com/SAP/ui5-tooling/issues/381
+  "sap/ui/core/date/Gregorian",
 ], function(UIComponent, Device) {
   "use strict";
 

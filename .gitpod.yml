@@ -1,11 +1,15 @@
-
+---
 image:
   file: .gitpod.Dockerfile
 
 # List the ports you want to expose and what to do when they are served. See https://www.gitpod.io/docs/config-ports/
 ports:
   - port: 3000
+    description: "For serving dev"
     onOpen: notify # User should not open the preview too soon. See https://github.com/gitpod-io/gitpod/issues/531
+  - port: 3001
+    description: "For serving dist"
+    onOpen: ignore
 
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
 tasks:
@@ -16,3 +20,4 @@ vscode:
     - redhat.vscode-xml
     - https://github.com/SAP/ui5-language-assistant/releases/latest/download/vscode-ui5-language-assistant-3.3.1.vsix
     - https://github.com/SAP/yeoman-ui/releases/latest/download/yeoman-ui-1.8.2.vsix
+...
