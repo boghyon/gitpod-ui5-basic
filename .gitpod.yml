@@ -9,12 +9,12 @@ ports:
     onOpen: notify # User should not open the preview too soon. See https://github.com/gitpod-io/gitpod/issues/531
   - port: 3001
     description: "For serving dist"
-    onOpen: ignore
+    onOpen: notify
 
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - init: npm install --global @ui5/cli
-    command: npm install && npm run start
+  - init: npm install --global @ui5/cli && npm install --save-dev @ui5/cli
+    command: npm install && ui5 use openui5@latest && npm run build-self-contained && ui5 use openui5@latest --config ui5-dist.yaml && npm run start-dist
 vscode:
   extensions:
     - redhat.vscode-xml
