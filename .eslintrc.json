@@ -9,8 +9,7 @@
         "es6": true
     },
     "globals": {
-        "sap": true,
-        "jQuery": true
+        "sap": "readonly"
     },
     "rules": {
         "block-scoped-var": 1,
