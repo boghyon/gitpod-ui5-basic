@@ -6,7 +6,7 @@ sap.ui.define([
 ], function(UIComponent, Device) {
   "use strict";
 
-  return UIComponent.extend("demo.Component", {
+  return UIComponent.extend("my.demo.Component", {
     metadata: {
       interfaces: [
         "sap.ui.core.IAsyncContentCreation",

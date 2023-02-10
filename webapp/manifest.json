@@ -1,8 +1,8 @@
 {
-	"_version": "1.47.0",
+	"_version": "1.50.0",
 	"start_url": "index.html",
 	"sap.app": {
-		"id": "demo",
+		"id": "my.demo",
 		"type": "application",
 		"title": "App Title",
 		"description": "Sample Code",
@@ -29,7 +29,7 @@
 	},
 	"sap.ui5": {
 		"dependencies": {
-			"minUI5Version": "1.107.1",
+			"minUI5Version": "1.110.0",
 			"libs": {
 				"sap.ui.core": {},
 				"sap.m": {},
@@ -51,14 +51,13 @@
 					"autoExpandSelect": true,
 					"earlyRequests": true,
 					"operationMode": "Server",
-					"synchronizationMode": "None",
 					"groupId": "$direct"
 				},
 				"preload": true
 			}
 		},
 		"rootView": {
-			"viewName": "demo.view.App",
+			"viewName": "my.demo.view.App",
 			"id": "rootView",
 			"type": "XML"
 		},
@@ -87,7 +86,7 @@
 				"type": "View",
 				"routerClass": "sap.m.routing.Router",
 				"viewType": "XML",
-				"path": "demo.view",
+				"path": "my.demo.view",
 				"controlId": "rootApp",
 				"controlAggregation": "pages",
 				"transition": "slide",
