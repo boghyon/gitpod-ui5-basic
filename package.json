@@ -14,7 +14,7 @@
         "lint": "eslint webapp"
     },
     "devDependencies": {
-        "@ui5/cli": "^3.0.0",
+        "@ui5/cli": "^3.0.7",
         "eslint": "^8.33.0",
         "local-web-server": "^5.2.1",
         "rimraf": "^4.1.2",
