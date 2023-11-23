@@ -1,6 +1,6 @@
 sap.ui.define([
   "sap/ui/core/mvc/Controller",
-], function (Controller) {
+], (Controller) => {
   "use strict";
 
   return Controller.extend("my.demo.controller.Home", {

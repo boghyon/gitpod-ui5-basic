@@ -4,21 +4,21 @@
     "private": true,
     "description": "",
     "engines": {
-        "node": ">=18.12.0"
+        "node": ">=18.14.0"
     },
     "scripts": {
-        "start": "ui5 serve --port 3000 --open index.html?sap-ui-xx-componentPreload=off",
-        "start-dist": "ui5 serve --port 3001 --config ui5-dist.yaml --open index.html",
+        "start": "ui5 serve --port 3000 --open 'index.html?sap-ui-xx-componentPreload=off&sap-ui-xx-csp-policy=sap-target-level-3:report-only'",
+        "start-dist": "ui5 serve --port 3001 --config ui5-dist.yaml --open 'index.html?sap-ui-xx-csp-policy=sap-target-level-3'",
         "build": "ui5 build -a --clean-dest",
         "build-self-contained": "ui5 build self-contained -a --clean-dest",
         "lint": "eslint webapp"
     },
     "devDependencies": {
-        "@ui5/cli": "^3.0.7",
+        "@ui5/cli": "^3.7.2",
         "eslint": "^8.33.0",
         "local-web-server": "^5.2.1",
         "rimraf": "^4.1.2",
-        "ui5-middleware-index": "*",
+        "ui5-middleware-serveframework": "*",
         "ui5-middleware-simpleproxy": "*"
     }
 }

@@ -1,8 +1,8 @@
-<mvc:View controllerName="my.demo.controller.Home" xmlns:mvc="sap.ui.core.mvc">
-  <Page xmlns="sap.m"
-    showHeader="false"
-    backgroundDesign="List"
-  >
+<mvc:View controllerName="my.demo.controller.Home"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+>
+  <Page showHeader="false" backgroundDesign="List">
     <List id="sampleList"
       headerText="Sample data from OData V4 - Sales Orders created at:"
       sticky="HeaderToolbar,InfoToolbar"
