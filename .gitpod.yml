@@ -6,10 +6,16 @@ image:
 ports:
   - port: 3000
     description: "For serving dev"
-    onOpen: notify # User should not open the preview too soon. See https://github.com/gitpod-io/gitpod/issues/531
+    onOpen: ignore # User should not open the preview too soon. See https://github.com/gitpod-io/gitpod/issues/531
+    protocol: https
+    visibility: public
+    name: "dev"
   - port: 3001
     description: "For serving dist"
-    onOpen: notify
+    onOpen: ignore
+    protocol: https
+    visibility: public
+    name: "dist"
 
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
 tasks:
