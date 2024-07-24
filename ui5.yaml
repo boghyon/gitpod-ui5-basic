@@ -1,18 +1,19 @@
 ---
-specVersion: "3.1"
+specVersion: "4.0"
 metadata:
   name: my.demo
 type: application
 framework:
   name: OpenUI5
-  version: "1.120.1"
+  version: "1.126.1"
   libraries:
     - name: sap.ui.core
     - name: sap.m
     - name: sap.ui.unified
     - name: sap.ui.layout
-    - name: themelib_sap_fiori_3
     - name: themelib_sap_horizon
+    - name: themelib_sap_fiori_3
+      optional: true
 server:
   customMiddleware:
     - name: ui5-middleware-simpleproxy
@@ -25,6 +26,4 @@ server:
         # user name and password should be created in the .env file.
         # See https://github.com/petermuessig/ui5-ecosystem-showcase/blob/21b24332019415d98c456685fa5893089c13f669/packages/ui5-middleware-simpleproxy/README.md#env-support
         # But some services might not require authentication: https://blogs.sap.com/2017/12/05/new-sap-gateway-demo-system-available/comment-page-1/#comment-554228
-    - name: ui5-middleware-serveframework
-      afterMiddleware: compression
 ...

@@ -1,11 +1,15 @@
 {
-	"_version": "1.60.0",
+	"_version": "1.64.0",
 	"start_url": "index.html",
 	"sap.app": {
 		"id": "my.demo",
 		"type": "application",
-		"title": "App Title",
-		"description": "Sample Code",
+		"i18n": {
+			"bundleUrl": "i18n/i18n.properties",
+			"bundleUrlRelativeTo": "manifest"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{description}",
 		"applicationVersion": {
 			"version": "1.0.0"
 		},
@@ -29,7 +33,7 @@
 	},
 	"sap.ui5": {
 		"dependencies": {
-			"minUI5Version": "1.120",
+			"minUI5Version": ["1.120", "2"],
 			"libs": {
 				"sap.ui.core": {},
 				"sap.m": {},
@@ -54,6 +58,14 @@
 					"groupId": "$direct"
 				},
 				"preload": true
+			},
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleUrl": "i18n/i18n.properties",
+					"bundleUrlRelativeTo": "manifest",
+					"async": true
+				}
 			}
 		},
 		"rootView": {
@@ -62,6 +74,19 @@
 			"type": "XML"
 		},
 		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"type": "View",
+				"viewType": "XML",
+				"path": "my.demo.view",
+				"controlId": "rootApp",
+				"controlAggregation": "pages",
+				"transition": "slide",
+				"bypassed": {
+					"target": "notFound"
+				},
+				"homeRoute": "home"
+			},
 			"routes": [
 				{
 					"name": "home",
@@ -81,19 +106,6 @@
 					"transition": "slide",
 					"level": 98
 				}
-			},
-			"config": {
-				"type": "View",
-				"routerClass": "sap.m.routing.Router",
-				"viewType": "XML",
-				"path": "my.demo.view",
-				"controlId": "rootApp",
-				"controlAggregation": "pages",
-				"transition": "slide",
-				"bypassed": {
-					"target": "notFound"
-				},
-				"homeRoute": "home"
 			}
 		}
 	}

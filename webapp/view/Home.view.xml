@@ -4,7 +4,7 @@
 >
   <Page showHeader="false" backgroundDesign="List">
     <List id="sampleList"
-      headerText="Sample data from OData V4 - Sales Orders created at:"
+      headerText="{i18n>listHeader}"
       sticky="HeaderToolbar,InfoToolbar"
       growing="true"
       items="{

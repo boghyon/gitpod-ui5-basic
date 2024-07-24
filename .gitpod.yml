@@ -17,12 +17,12 @@ ports:
 
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - before: npm install --global @ui5/cli && npm install --save-dev @ui5/cli && npm install
+  - before: npm install
     init: ui5 use openui5@latest && npm run build-self-contained && ui5 use openui5@latest --config ui5-dist.yaml
     command: npm start
 vscode:
   extensions:
     - redhat.vscode-xml
     - https://github.com/SAP/xml-tools/releases/download/xml-toolkit%401.1.1/xml-toolkit-1.1.1.vsix
-    - https://github.com/SAP/ui5-language-assistant/releases/download/v4.0.46/vscode-ui5-language-assistant-4.0.46.vsix
+    - https://github.com/SAP/ui5-language-assistant/releases/download/v4.0.65/vscode-ui5-language-assistant-4.0.65.vsix
 ...
