@@ -17,7 +17,7 @@ ports:
 
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - before: npm install
+  - before: nvm install --lts && npm install
     init: ui5 use openui5@latest && npm run build-self-contained && ui5 use openui5@latest --config ui5-dist.yaml
     command: npm start
 vscode:
