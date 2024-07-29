@@ -11,7 +11,7 @@
         "start-dist": "ui5 serve --port 3001 --config ui5-dist.yaml --open 'index.html?sap-ui-logLevel=ALL&sap-ui-xx-csp-policy=sap-target-level-3'",
         "build": "ui5 build -a --clean-dest",
         "build-self-contained": "ui5 build self-contained -a --clean-dest",
-        "lint": "eslint webapp"
+        "lint": "eslint webapp && ui5lint"
     },
     "devDependencies": {
         "@ui5/cli": "^4.0.0",
