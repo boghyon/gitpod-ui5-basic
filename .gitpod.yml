@@ -24,5 +24,5 @@ vscode:
   extensions:
     - redhat.vscode-xml
     - https://github.com/SAP/xml-tools/releases/download/xml-toolkit%401.1.1/xml-toolkit-1.1.1.vsix
-    - https://github.com/SAP/ui5-language-assistant/releases/download/v4.0.65/vscode-ui5-language-assistant-4.0.65.vsix
+    - https://github.com/SAP/ui5-language-assistant/releases/download/v4.0.80/vscode-ui5-language-assistant-4.0.80.vsix
 ...
