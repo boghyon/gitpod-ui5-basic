@@ -1,3 +1,4 @@
+---
 name: Bug Report
 description: Report a bug in OpenUI5
 type: Bug
@@ -19,16 +20,16 @@ body:
     validations:
       required: true
   - type: textarea
+    id: expected-behavior
+    attributes:
+      label: What is the expected behavior?
+      description: Tell us what you expect to happen instead.
+  - type: textarea
     id: logs
     attributes:
       label: Log Output / Stack Trace
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for you to use backticks.
       render: shell
-  - type: textarea
-    id: expected-behavior
-    attributes:
-      label: What is the expected behavior?
-      description: Tell us what you expect to happen instead.
   - type: input
     id: version-OpenUI5
     attributes:
@@ -40,10 +41,10 @@ body:
     id: issue-env
     attributes:
       label: Is the issue reproducible only with specific devices, OS, or browsers?
-      description: Share the environment where the issue could be observed but not in other.
+      description: Specify the environment, in which the issue could be observed but not in other.
       placeholder: |
-        - Device name: ...
-        - Touch enabled: Yes|No
+        - Device(s): ...
+        - Touch enabled: YES|NO
         - Chromium browsers: OK|FAIL
         - Firefox: OK|FAIL
         - Safari: OK|FAIL
@@ -62,3 +63,5 @@ body:
       placeholder: |
         - https:// ...
         - https:// ...
+
+---
