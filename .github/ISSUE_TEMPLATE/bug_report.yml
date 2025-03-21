@@ -7,13 +7,6 @@ body:
       value: | 
         Please have a look at our [contributing guidelines](https://github.com/SAP/openui5/blob/main/CONTRIBUTING.md#report-bugs) on reporting issues.
         For issues concerning SAPUI5 and not reproducible with OpenUI5 alone, please contact SAP customer support instead.
-  - type: checkboxes
-    id: issue-checked
-    attributes:
-      label: Issues Checked
-      description: Please check if a similar issue has been reported and if your project aligns with documented best practices.
-      options:
-        - label: I have searched the existing issues in this OpenUI5 repository, and reviewed the relevant documentation as well as the API reference from https://sdk.openui5.org/nightly.
   - type: textarea
     id: steps-to-reproduce
     attributes:
@@ -55,4 +48,12 @@ body:
       placeholder: |
         - https:// ...
         - https:// ...
+  - type: checkboxes
+    id: issue-checked
+    attributes:
+      label: Issues Checked
+      description: Please check if a similar issue has been reported and if your project aligns with documented best practices.
+      options:
+        - label: I have searched the existing issues in this OpenUI5 repository, and reviewed the relevant documentation as well as the API reference from https://sdk.openui5.org/nightly.
+          required: true
 ...
