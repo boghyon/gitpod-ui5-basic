@@ -43,7 +43,7 @@ body:
       description: Specify the environment, in which the issue could be observed but not in other.
       placeholder: |
         - Device(s): ...
-        - Touch enabled: YES|NO
+        - Touch enabled: ...
         - Chromium browsers: OK|FAIL
         - Firefox: OK|FAIL
         - Safari: OK|FAIL
