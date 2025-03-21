@@ -1,4 +1,3 @@
----
 name: Bug Report
 description: Report a bug in OpenUI5
 type: Bug
@@ -63,5 +62,3 @@ body:
       placeholder: |
         - https:// ...
         - https:// ...
-
----
