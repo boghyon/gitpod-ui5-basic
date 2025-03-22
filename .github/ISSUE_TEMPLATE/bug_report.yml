@@ -13,7 +13,7 @@ body:
       label: What is the issue and how can we reproduce it?
       description: |
         To help us understand and resolve the issue quickly, please provide a **minimal reproducible example** (required) that clearly illustrates the unexpected behavior. You can easily create one using:
-        - An online JavaScript code sharing platform.
+        - An online JavaScript code sharing platform like [JSBin](https://jsbin.com/neyagus/edit?html,js,output) or [Plunker](https://embed.plnkr.co/16J1TFICxbqETCzaxuZ0?preview=README).
         - One of our [Demo Kit samples](https://sdk.openui5.org/nightly/#/controls), with any necessary code modifications.
         - A fork of our [OpenUI5 sample app](https://github.com/SAP/openui5-sample-app).
       value: |
@@ -21,7 +21,7 @@ body:
         2. Click on ...
            **Issue:** ...
         
-        '#### Log Output / Stack Trace:'
+        #### Log Output / Stack Trace:
         ```shell
         ...
         ```
@@ -50,19 +50,15 @@ body:
         - Chromium browsers: OK|FAIL
         - Firefox: OK|FAIL
         - Safari: OK|FAIL
-  - type: textarea
-    id: issue-discussed-somewhere
-    attributes:
-      label: Has this issue been previously reported or discussed elsewhere?
-      placeholder: |
-        - https:// ...
-        - https:// ...
   - type: checkboxes
     id: issue-checked
     attributes:
       label: Issues Checked
-      description: Please check if a similar issue has been reported and if your project aligns with documented best practices.
+      description: |
+        To avoid duplicates and ensure efficient issue resolution, please double-check:
+        - If a similar issue has been reported or discussed already either in this [OpenUI5 repository](https://github.com/search?q=repo:SAP/openui5&type=issues&s=created&o=desc) or in community sites like [Stack Overflow](https://stackoverflow.com/search?tab=active&q=%5bsapui5%5d%20is%3aquestion&searchOn=3).
+        - If your project aligns with documented best practices and [compatibility guidelines](https://sdk.openui5.org/nightly/#/topic/9638e4fce1bd45f4bebf7c219672908c).
       options:
-        - label: I have searched the existing issues in this OpenUI5 repository, and reviewed the relevant documentation as well as the API reference from https://sdk.openui5.org/nightly.
+        - label: I have searched the existing issues and reviewed the relevant documentation as well as the API reference from https://sdk.openui5.org/nightly.
           required: true
 ...
