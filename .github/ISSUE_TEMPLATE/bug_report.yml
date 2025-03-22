@@ -38,25 +38,23 @@ body:
   - type: textarea
     id: issue-env
     attributes:
-      label: Is the issue reproducible only with specific devices, OS, or browsers?
-      description: Specify the environment in which the issue could be observed, but not in others.
+      label: Is the issue device or browser specific?
+      description: Specify the environment in which the issue could be observed, but not in others. See also the [list of browser-platform combinations supported by OpenUI5](https://sdk.openui5.org/nightly/#/topic/74b59efa0eef48988d3b716bd0ecc933).
       placeholder: |
         Yes, tested with:
         - Device: ...
         - Touch enabled: YES|NO
-        - Chromium browsers (version ...): OK|FAIL
-        - Firefox (version ...): OK|FAIL
-        - Safari (version ...): OK|FAIL
-        
-        Working expectedly in other environments.
+        - Chromium browser Chrome|Edge|Brave|etc. (Version ...): OK|FAIL
+        - Firefox (Version ...): OK|FAIL
+        - Safari (Version ...): OK|FAIL
   - type: checkboxes
     id: issue-checked
     attributes:
       label: Issues Checked
       description: |
         To avoid duplicates and ensure efficient issue resolution, please double-check:
-        - If a similar issue has been reported or discussed already either in this OpenUI5 repository or in community sites like [Stack Overflow](https://stackoverflow.com/search?tab=active&q=%5bsapui5%5d%20is%3aquestion&searchOn=3).
-        - If your project aligns with documented best practices and [compatibility guidelines](https://sdk.openui5.org/nightly/#/topic/9638e4fce1bd45f4bebf7c219672908c).
+        - Whether a similar issue has been reported or discussed already either in this OpenUI5 repository or in community sites like [Stack Overflow](https://stackoverflow.com/search?tab=active&q=%5bsapui5%5d%20is%3aquestion&searchOn=3).
+        - Whether your project aligns with documented best practices and [compatibility guidelines](https://sdk.openui5.org/nightly/#/topic/9638e4fce1bd45f4bebf7c219672908c).
       options:
         - label: I have searched the existing issues and reviewed the relevant documentation as well as the API reference from https://sdk.openui5.org/nightly.
           required: true
