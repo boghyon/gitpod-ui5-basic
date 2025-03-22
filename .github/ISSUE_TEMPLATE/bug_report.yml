@@ -6,7 +6,7 @@ body:
       value: | 
         Please have a look at our [contributing guidelines](https://github.com/SAP/openui5/blob/main/CONTRIBUTING.md#report-bugs) on reporting issues.
         > [!IMPORTANT]
-        > For issues concerning **SAPUI5** (e.g. *SAP Fiori elements* or *Smart Controls*) and not reproducible with the OpenUI5 code alone, please **contact SAP customer support instead.** The sample you share below **must not** use `https://ui5.sap.com` or `https://sapui5.hana.ondemand.com` but only an OpenUI5 URL such as `https://sdk.openui5.org/nightly`.
+        > For issues concerning **SAPUI5** (*SAP Fiori elements*, *Smart Controls*, etc.) and not reproducible with the OpenUI5 code alone, please **contact SAP customer support instead.** The sample you share below **must not** use `https://ui5.sap.com` or `https://sapui5.hana.ondemand.com` but only OpenUI5 such as <code>https://sdk.openui5.org/<em>&lt;...></em></code>.
   - type: textarea
     id: steps-to-reproduce
     attributes:
@@ -19,7 +19,7 @@ body:
       value: |
         1. Open the sample https:// ...
         2. Click on ...
-        3. ... → **Issue:** ...
+        3. ... --> **Issue:** ...
         
         #### Error:
         > ...
@@ -44,17 +44,19 @@ body:
         Yes, tested with:
         - Device: ...
         - Touch enabled: YES|NO
-        - Chromium browser Chrome|Edge|Brave|etc. (Version ...): OK|FAIL
+        - Chromium browser Chrome|Edge|etc. (Version ...): OK|FAIL
         - Firefox (Version ...): OK|FAIL
         - Safari (Version ...): OK|FAIL
   - type: checkboxes
     id: issue-checked
     attributes:
-      label: Issues Checked
+      label: Confirmation
       description: |
         To avoid duplicates and ensure efficient issue resolution, please double-check:
         - Whether a similar issue has been reported or discussed already either in this OpenUI5 repository or in community sites like [Stack Overflow](https://stackoverflow.com/search?tab=active&q=%5bsapui5%5d%20is%3aquestion&searchOn=3).
         - Whether your project aligns with documented best practices and [compatibility guidelines](https://sdk.openui5.org/nightly/#/topic/9638e4fce1bd45f4bebf7c219672908c).
       options:
         - label: I have searched the existing issues and reviewed the relevant documentation as well as the API reference from https://sdk.openui5.org/nightly.
+          required: true
+        - label: I am not disclosing any internal or sensitive information.
           required: true
