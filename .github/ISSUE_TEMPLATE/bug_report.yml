@@ -6,7 +6,7 @@ body:
       value: | 
         Please have a look at our [contributing guidelines](https://github.com/SAP/openui5/blob/main/CONTRIBUTING.md#report-bugs) on reporting issues.
         > [!IMPORTANT]
-        > For issues concerning **SAPUI5** (*SAP Fiori elements*, *Smart Controls*, etc.) and not reproducible with the OpenUI5 code alone, please **contact SAP customer support instead.** Likewiese, your example shared below should use only OpenUI5 (e.g. `https://sdk.openui5.org/...`) and avoid `https://ui5.sap.com` or `https://sapui5.hana.ondemand.com`.
+        > For issues concerning **SAPUI5** (*SAP Fiori elements*, *Smart Controls*, etc.) and not reproducible with the OpenUI5 code alone, please **contact SAP customer support instead.** Likewiese, your example shared below should use only OpenUI5, for example, `https://sdk.openui5.org/...`.
   - type: textarea
     id: steps-to-reproduce
     attributes:
