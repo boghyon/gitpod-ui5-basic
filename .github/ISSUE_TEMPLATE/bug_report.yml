@@ -1,4 +1,3 @@
----
 name: Bug Report
 description: Report a bug in OpenUI5
 body:
@@ -58,4 +57,3 @@ body:
       options:
         - label: I have searched the existing issues and reviewed the relevant documentation as well as the API reference from https://sdk.openui5.org/nightly.
           required: true
-...
