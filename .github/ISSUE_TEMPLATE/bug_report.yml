@@ -6,7 +6,8 @@ body:
       value: | 
         Please have a look at our [contributing guidelines](https://github.com/SAP/openui5/blob/main/CONTRIBUTING.md#report-bugs) on reporting issues.
         > [!IMPORTANT]
-        > For issues concerning **SAPUI5** and not reproducible with OpenUI5 alone, please **contact SAP customer support instead.**
+        > For issues concerning **SAPUI5** (e.g. with *SAP Fiori elements* or *Smart Controls*) and not reproducible with the OpenUI5 code alone, please **contact SAP customer support instead.**
+        > The sample shared below **must not** use `https://ui5.sap.com` or `https://sapui5.hana.ondemand.com`. Use the OpenUI5 URL such as the `https://sdk.openui5.org/nightly`.
   - type: textarea
     id: steps-to-reproduce
     attributes:
@@ -21,17 +22,17 @@ body:
         2. Click on ...
         3. ... → **Issue:** ...
         
-        #### Error
+        #### Error:
         > ...
         
-        #### Expected behavior
+        #### Expected behavior:
         ...
     validations:
       required: true
   - type: input
     id: version-OpenUI5
     attributes:
-      label: OpenUI5 version
+      label: Which OpenUI5 version is your project targeting?
       description: Share your target OpenUI5 version(s). List of maintained OpenUI5 versions can be found at https://sdk.openui5.org/versionoverview.html.
     validations:
       required: true
@@ -41,11 +42,13 @@ body:
       label: Is the issue reproducible only with specific devices, OS, or browsers?
       description: Specify the environment in which the issue could be observed, but not in others.
       placeholder: |
-        - Device(s): ...
+        Yes, tested with:
+        - Device: ...
         - Touch enabled: YES|NO
-        - Chromium browsers: OK|FAIL
-        - Firefox: OK|FAIL
-        - Safari: OK|FAIL
+        - Chromium browsers (version ...): OK|FAIL
+        - Firefox (version ...): OK|FAIL
+        - Safari (version ...): OK|FAIL
+        Working expectedly in other environments.
   - type: checkboxes
     id: issue-checked
     attributes:
