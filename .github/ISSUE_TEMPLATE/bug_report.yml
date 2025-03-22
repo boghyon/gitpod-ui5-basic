@@ -56,7 +56,7 @@ body:
         - Whether a similar issue has been reported or discussed already either in this OpenUI5 repository or in community sites like [Stack Overflow](https://stackoverflow.com/search?tab=active&q=%5bsapui5%5d%20is%3aquestion&searchOn=3).
         - Whether your project aligns with documented best practices and [compatibility guidelines](https://sdk.openui5.org/nightly/#/topic/9638e4fce1bd45f4bebf7c219672908c).
       options:
-        - label: I have searched the existing issues and reviewed the relevant documentation as well as the API reference from https://sdk.openui5.org/nightly.
+        - label: I have searched the existing issues and reviewed the relevant documentation as well as the API reference from OpenUI5.
           required: true
         - label: I am not disclosing any internal or sensitive information.
           required: true
