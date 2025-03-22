@@ -13,13 +13,15 @@ body:
       label: What is the issue and how can we reproduce it?
       description: |
         To help us understand and resolve the issue efficiently, please provide a **minimal reproducible example** (required) and steps that clearly illustrate the unexpected behavior.
+        
         > [!TIP]
         > You can easily create a minimal reproducible example using:
-        > - An online JavaScript code sharing platform like [JSBin](https://jsbin.com/neyagus/edit?html,js,output), [Plunker](https://embed.plnkr.co/16J1TFICxbqETCzaxuZ0?preview=README), etc.
-        > - One of our [Demo Kit samples](https://sdk.openui5.org/nightly/#/controls) with any necessary code modifications.
-        > - A fork of our [OpenUI5 sample app](https://github.com/SAP/openui5-sample-app).
+        > An online JavaScript code sharing platform like [JSBin](https://jsbin.com/neyagus/edit?html,js,output), [Plunker](https://embed.plnkr.co/16J1TFICxbqETCzaxuZ0?preview=README), etc.
+        > One of our [Demo Kit samples](https://sdk.openui5.org/nightly/#/controls) with any necessary code modifications.
+        > A fork of our [OpenUI5 sample app](https://github.com/SAP/openui5-sample-app).
         > 
         > Alternatively, share your existing project but stripped-down to a minimum sufficient to reproduce the issue.
+        
       value: |
         1. Open the sample https:// ...
         2. Click on ...
