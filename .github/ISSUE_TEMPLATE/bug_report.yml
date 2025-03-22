@@ -15,7 +15,13 @@ body:
       value: |
         1. Open https:// ...
         2. Click on ...
+           
            **Issue:** ...
+
+           Error:
+           ```shell
+           Uncaught TypeError: ...
+           ```
     validations:
       required: true
   - type: textarea
