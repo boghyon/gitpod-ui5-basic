@@ -1,6 +1,7 @@
 ---
 name: Bug Report
 description: Report a bug in OpenUI5
+type: Bug
 body:
   - type: markdown
     attributes:
@@ -8,7 +9,7 @@ body:
         Please have a look at our [contributing guidelines](https://github.com/SAP/openui5/blob/main/CONTRIBUTING.md#report-bugs) on reporting issues.
 
         > [!IMPORTANT]
-        > For issues concerning **SAPUI5** (e.g. *SAP Fiori elements* or *Smart Controls*) and not reproducible with the OpenUI5 code alone, please **contact SAP customer support instead.** Accordingly, the *minimal reproducible example* (MRE) below should use only OpenUI5 e.g. `https://sdk.openui5.org/...` and **avoid `https://ui5.sap.com` or `https://sapui5.hana.ondemand.com`.**
+        > For issues concerning **SAPUI5** (e.g. *SAP Fiori elements* or *Smart Controls*) and not reproducible with the OpenUI5 code alone, please **contact SAP customer support instead.** Accordingly, the *minimal reproducible example* (MRE) below should use only OpenUI5, e.g. `https://sdk.openui5.org/...`, and **avoid** `https://ui5.sap.com` or `https://sapui5.hana.ondemand.com`.
 
         > [!TIP]
         > You can easily create an MRE using:
