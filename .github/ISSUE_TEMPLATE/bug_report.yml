@@ -1,3 +1,4 @@
+---
 name: Bug Report
 description: Report a bug in OpenUI5
 body:
@@ -5,8 +6,9 @@ body:
     attributes:
       value: | 
         Please have a look at our [contributing guidelines](https://github.com/SAP/openui5/blob/main/CONTRIBUTING.md#report-bugs) on reporting issues.
+
         > [!IMPORTANT]
-        > For issues concerning **SAPUI5** (*SAP Fiori elements*, *Smart Controls*, etc.) and not reproducible with the OpenUI5 code alone, please **contact SAP customer support instead.** Accordingly, the *minimal reproducible example* (MRE) below should use only OpenUI5 (e.g. `https://sdk.openui5.org/...`) and avoid `https://ui5.sap.com` or `https://sapui5.hana.ondemand.com`.
+        > For issues concerning **SAPUI5** (e.g. *SAP Fiori elements* or *Smart Controls*) and not reproducible with the OpenUI5 code alone, please **contact SAP customer support instead.** Accordingly, the *minimal reproducible example* (MRE) below should use only OpenUI5 (e.g. `https://sdk.openui5.org/...`) and avoid `https://ui5.sap.com` or `https://sapui5.hana.ondemand.com`.
 
         > [!TIP]
         > You can easily create an MRE using:
@@ -14,14 +16,14 @@ body:
         > - One of our [Demo Kit samples](https://sdk.openui5.org/nightly/#/controls) with any necessary code modifications.
         > - A fork of our [OpenUI5 sample app](https://github.com/SAP/openui5-sample-app).
         > 
-        > Alternatively, share your existing project but stripped-down to a minimum sufficient to reproduce the issue.
+        > Alternatively, share your existing project but stripped-down to a minimum sufficient to reproduce the issue.  
+        > Please do not share real business data or sensitive information.
   - type: textarea
     id: steps-to-reproduce
     attributes:
       label: What is the issue and how can we reproduce it?
       description: |
         To help us understand and resolve the issue efficiently, please provide a **minimal reproducible example** (required) and steps that clearly illustrate the unexpected behavior.
-        
       value: |
         1. Open the sample https:// ...
         2. Click on ...
@@ -38,14 +40,16 @@ body:
     id: version-OpenUI5
     attributes:
       label: Which OpenUI5 version is your project targeting?
-      description: Share your target OpenUI5 version(s). List of maintained OpenUI5 versions can be found at https://sdk.openui5.org/versionoverview.html.
+      description: Share your target OpenUI5 version(s) where the issue is still reproducible. List of maintained OpenUI5 versions can be found at https://sdk.openui5.org/versionoverview.html.
     validations:
       required: true
   - type: textarea
     id: issue-env
     attributes:
       label: Is the issue device or browser specific?
-      description: Specify the environment in which the issue could be observed, but not in others. See also the [list of browser-platform combinations supported by OpenUI5](https://sdk.openui5.org/nightly/#/topic/74b59efa0eef48988d3b716bd0ecc933).
+      description: |
+        If so, specify the environment in which the issue could be observed, but not in others.
+        See also the [list of browser-platform combinations supported by OpenUI5](https://sdk.openui5.org/nightly/#/topic/74b59efa0eef48988d3b716bd0ecc933).
       placeholder: |
         Yes, tested with:
         - Device: ...
@@ -62,7 +66,8 @@ body:
         - Whether a similar issue has been reported or discussed already either in this OpenUI5 repository or in community sites like [Stack Overflow](https://stackoverflow.com/search?tab=active&q=%5bsapui5%5d%20is%3aquestion&searchOn=3).
         - Whether your project aligns with documented best practices and [compatibility guidelines](https://sdk.openui5.org/nightly/#/topic/9638e4fce1bd45f4bebf7c219672908c).
       options:
-        - label: I have searched the existing issues and reviewed the relevant documentation as well as the API reference from OpenUI5.
+        - label: I have searched the existing issues and reviewed the relevant documentation as well as the API reference.
           required: true
         - label: I am not disclosing any internal or sensitive information.
           required: true
+...
