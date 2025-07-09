@@ -15,7 +15,7 @@
         "lint": "eslint webapp && ui5lint"
     },
     "devDependencies": {
-        "@ui5/cli": "^4.0.0",
+        "@ui5/cli": "^4.0.19",
         "@ui5/linter": "",
         "eslint": "^9.22.0",
         "local-web-server": "^5.4.0",
