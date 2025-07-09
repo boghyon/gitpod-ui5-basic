@@ -4,5 +4,18 @@
     "config:recommended",
     "github>ui5/renovate-config"
   ],
-  "separateMinorPatch": true
+  "separateMinorPatch": true,
+	"rangeStrategy": "bump",
+  "lockFileMaintenance": {
+		"enabled": true,
+		"automerge": true
+  },
+  "packageRules": [
+		{
+			"matchDepNames": [
+				"*"
+			],
+			"automerge": true
+		}
+  ]
 }
