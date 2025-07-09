@@ -5,7 +5,7 @@
     "description": "",
     "engines": {
         "node": "^20.17.0 || >=22.9.0",
-		"npm": ">= 8"
+		"npm": ">= 8.19.4"
     },
     "scripts": {
         "start": "ui5 serve --port 3000 --open \"index.html?sap-ui-xx-componentPreload=off&sap-ui-logLevel=ALL&sap-ui-xx-csp-policy=sap-target-level-3:report-only\"",
