@@ -1,3 +1,8 @@
+> [!IMPORTANT]
+> This repo is archived for now due to the SAP Gateway demo system being de-commissioned.
+
+____
+
 # UI5 Basic Template
 
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/boghyon/gitpod-ui5-basic)
