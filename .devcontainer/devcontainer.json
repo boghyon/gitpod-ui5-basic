@@ -1,0 +1,48 @@
+// The Dev Container format allows you to configure your environment. At the heart of it
+// is a Docker image or Dockerfile which controls the tools available in your environment.
+//
+// See https://aka.ms/devcontainer.json for more information.
+{
+	"name": "Ona",
+	// Use "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+	// instead of the build to use a pre-built image.
+	"build": {
+        "context": ".",
+        "dockerfile": "Dockerfile"
+    },
+	// Features add additional features to your environment. See https://containers.dev/features
+	// Beware: features are not supported on all platforms and may have unintended side-effects.
+	// "features": {
+    //   "ghcr.io/devcontainers/features/docker-in-docker": {
+    //     "moby": false
+    //   }
+    // }
+	"forwardPorts": [3000, 3001],
+	"portsAttributes": {
+		"3000": {
+			"label": "dev",
+			"onAutoForward": "openBrowser"
+		},
+		"3001": {
+			"label": "dist",
+			"onAutoForward": "ignore"
+		}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"redhat.vscode-xml",
+				"redhat.vscode-yaml",
+				"donjayamanne.githistory",
+				"dbaeumer.vscode-eslint",
+				"SAPSE.vscode-cds",
+				"SAPSE.sap-ux-application-modeler-extension",
+				"SAPSE.vsc-extension-odata-csdl-modeler",
+				"SAPSE.vscode-sap-cap-tools",
+				"SAPSE.vscode-wing-cds-editor-vsc"
+			]
+		}
+	},
+	"postCreateCommand": "npm install -g npm@latest && npm install -g @ui5/cli && npm install --include=dev",
+	"postStartCommand": "ui5 use openui5@latest && npm run build-self-contained && ui5 use openui5@latest --config ui5-dist.yaml"
+}

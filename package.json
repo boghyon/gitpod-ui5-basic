@@ -1,25 +1,29 @@
 {
-    "name": "ui5-basic-template-with-ui5-tooling",
-    "version": "1.0.0",
-    "private": true,
-    "description": "",
-    "engines": {
-        "node": "^20.17.0 || >=22.9.0",
-		"npm": ">= 11.4.2"
-    },
-    "scripts": {
-        "start": "ui5 serve --port 3000 --open \"index.html?sap-ui-xx-componentPreload=off&sap-ui-logLevel=ALL&sap-ui-xx-csp-policy=sap-target-level-3:report-only\"",
-        "start-dist": "ui5 serve --port 3001 --config ui5-dist.yaml --open \"index.html?sap-ui-logLevel=ALL&sap-ui-xx-csp-policy=sap-target-level-3\"",
-        "build": "ui5 build -a --clean-dest",
-        "build-self-contained": "ui5 build self-contained -a --clean-dest",
-        "lint": "eslint webapp && ui5lint"
-    },
-    "devDependencies": {
-        "@ui5/cli": "^4.0.19",
-        "@ui5/linter": "",
-        "eslint": "^9.31.0",
-        "local-web-server": "^5.4.0",
-        "rimraf": "^6.0.1",
-        "ui5-middleware-simpleproxy": ""
-    }
+  "name": "my.demo",
+  "version": "0.0.1",
+  "private": true,
+  "description": "",
+  "engines": {
+    "node": "^20.17.0 || >=22.9.0",
+    "npm": ">= 11.4.2"
+  },
+  "scripts": {
+    "prestart-dist": "echo '\n🚀 Starting UI5 Distribution Server...\n' && gitpod environment port list 2>/dev/null | grep '^3001' | awk '{print \"📱 Preview URL: \" $3}' && echo ''",
+    "start-dist": "ui5 serve --port 3001 --config ui5-dist.yaml",
+    "build-self-contained": "ui5 build self-contained -a --clean-dest",
+    "prestart": "echo '\n🚀 Starting UI5 Development Server...\n' && gitpod environment port list 2>/dev/null | grep '^3000' | awk '{print \"📱 Preview URL: \" $3}' && echo ''",
+    "start": "ui5 serve --port 3000 --accept-remote-connections",
+    "build": "ui5 build -a --clean-dest --include-task=generateCachebusterInfo",
+    "lint": "eslint webapp && ui5lint"
+  },
+  "devDependencies": {
+    "@sap/ux-ui5-tooling": "1",
+    "@ui5/cli": "^4.0.0",
+    "@ui5/linter": "",
+    "eslint": "^9.31.0",
+    "local-web-server": "^5.4.0",
+    "rimraf": "^6.0.1",
+    "ui5-middleware-simpleproxy": "*"
+  },
+  "main": "webapp/index.html"
 }

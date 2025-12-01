@@ -54,8 +54,7 @@
 				"settings": {
 					"autoExpandSelect": true,
 					"earlyRequests": true,
-					"operationMode": "Server",
-					"groupId": "$direct"
+					"operationMode": "Server"
 				},
 				"preload": true
 			},
